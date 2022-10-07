@@ -1,0 +1,55 @@
+{
+  "greetings": {
+    "welcome": "Hello, Welcome to ABC Clinic",
+    "morning": "Goodmorning, hope you are doing good",
+    "noon": "Goodafternoon",
+    "evening": "Goodevening",
+    "Goodnight": "Have a goodnight, sleep tight"
+  },
+  "questionLevelOne": [
+    {
+      "id": 1,
+      "type": "createAppointment",
+      "question": "If you want to book apointment, reply with message 'Book'"
+    },
+    {
+      "id": 2,
+      "type": "viewAppointment",
+      "question": "If you want to know the status of appointment, reply with message 'Status'"
+    },
+    {
+      "id": 3,
+      "type": "viewReport",
+      "question": "If you want to see your report, reply with 'Report'"
+    },
+    {
+      "id": 4,
+      "type": "News",
+      "question": "If you want to know the News, reply with 'News'"
+    }
+  ],
+  "response": {
+    "book": {
+      "enterDate": "Enter the booking date",
+      "timeSlots": [
+        {
+          "id": 1,
+          "dateAndTime": "10:00AM – 10:30AM",
+          "slotAvailable": 1,
+          "reply": "Reply 1"
+        },
+        {
+          "id": 2,
+          "dateAndTime": "10:30AM – 11:00AM",
+          "slotAvailable": 3,
+          "reply": "Reply 2"
+        }
+      ]
+    },
+    "isBookingSuccess": true,
+    "report": {
+      "isReportAvailable": true,
+      "reportURL": "https://www.goole.com/"
+    }
+  }
+}
